@@ -1,8 +1,8 @@
-# gqlsetupapp
+# GraphQl Setup App w/Ionic Framework
 
 Setting up graphql in an Ionic project using angular schematics in the latest version since it is based on the angular-cli project structure. With a simple angular cli command and configuration, your Ionic Framework app is ready to go
 
-Source Code: https://github.com/aaronksaunders/gqlsetupapp
+Video: https://www.youtube.com/watch?v=-Rc1bXbLPgw
 
 Related Links
 
