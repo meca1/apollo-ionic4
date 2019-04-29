@@ -21,10 +21,11 @@ export class HomePage implements OnInit {
 
         // THIS IS THE QUERY...
         query: gql`
+          query traerTodosLosUsuarios
           {
-            rates(currency: "USD") {
-              currency
-              rate
+            allUsers{
+              id
+              name
             }
           }
         `,
