@@ -32,14 +32,16 @@ export class HomePage implements OnInit {
       })
       // WHEN THE VALUE CHANGES, WE GET A STREAM FROM THE SUBSCRIPTION
       .valueChanges.subscribe((result : ApolloQueryResult<any> ) => {
-
+        console.log(result.data.allUsers);
+        
         // THE RATES THAT ARE RETURNED ARE NOW AVAILABLE
         // FOR DISPLAY IN THE UI
-        this.rates = result.data && result.data.rates;
-
+        this.rates = result.data && result.data.allUsers;
+        
         // LOADING STATUS
+        
         this.loading = result.loading;
-
+               
         // ERRORS
         this.error = result.errors;
       });
